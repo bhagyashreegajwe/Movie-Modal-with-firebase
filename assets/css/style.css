@@ -1,0 +1,112 @@
+body{
+    background-image: url('https://image.slidesdocs.com/responsive-images/background/2)-red-curtain-and-spotlight-3d-rendered-poster-for-night-show-festival-powerpoint-background_a936b22194__960_540.jpg');
+}
+
+.logo{
+    width: 120px;
+    display: inline-block;
+}
+
+.movieCard {
+    height: 500px;
+    overflow: hidden;
+}
+
+.movieCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ratingsection{
+    background-color: rgb(3,37,65);
+    color: #fff;
+    position: absolute;
+    padding: 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.overviewSection{
+    position: absolute;
+    transform: scale(0);
+    top: 30%;
+    height: 70%;
+    opacity: 0;
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.movieCard:hover .overviewSection, .movieCard:focus .overviewSection{
+    transform: scale(1);
+    opacity: 1;
+} 
+
+.edit-section{
+    bottom: 5%;
+    right: 5%;
+    position: absolute;
+}
+.backDrop{
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.7;
+    top:0;
+    position: fixed;
+    left: 0;
+    display: none;
+    
+}
+.movieModal{
+    width: 70%;
+    left: 15%;
+    top:8%;
+    position: fixed;
+    display: none;
+}
+.closeicon{
+    right: 10px;
+    position: absolute;
+    padding: 10px;
+    top:10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.backDrop.active, .movieModal.active{
+    display: block;
+}
+
+.loader{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.7 green, blue, alpha);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating{
+    background-color: green;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.border-bottom{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.border-radius-10{
+    border-radius: 10px;
+}
+
+.border-none{
+    border: 0px !important;
+}
